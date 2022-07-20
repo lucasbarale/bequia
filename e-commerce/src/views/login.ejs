@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partialViews/head.ejs') %>
+
+<body>
+
+    <%- include('./partialViews/header.ejs') %>
+
+<form action="/usuarios/login" method="POST" id="form-login"> 
+    <section class ="fondo-formularios">
+    <section class = "form-register form-login"> 
+        <% if(msgLogin){ %>
+            <span class="text-danger"><%= msgLogin %></span>
+        <% } %>
+        <ul class="ulErrores">
+
+        </ul> 
+        <h4>Ingresa a tu cuenta</h4>
+        <input class = "controls" type = "text" name="email_usuario" id="email_usuario" placeholder="Ingrese su correo">
+        <span class="text-danger"></span>
+        <% if(locals.errors && errors.email_usuario){ %>
+            <span class="text-danger"><%= errors.email_usuario.msg %></span>
+        <% } %>
+        <input class = "controls" type = "password" name="password_usuario" id="password_usuario" placeholder="Ingrese su contraseña">
+        <span class="text-danger"></span>
+        <% if(locals.errors && errors.password_usuario){ %>
+            <span class="text-danger"><%= errors.password_usuario.msg %></span>
+        <% } %>
+        <input class = "botons" type = "submit" value="Ingresar">
+        <label for="">Recordame</label>
+        <input type="checkbox" name="recordame"><br>
+    </section>
+    </section>
+</form>
+
+    <%- include('./partialViews/footer.ejs') %>
+    <script src="/js/loginValidation.js"></script>   
+</body>
+</html>

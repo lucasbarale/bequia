@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partialViews/head.ejs') %>
+<body>
+
+    <%- include('./partialViews/header.ejs') %>
+
+<form action="registro" method="GET"> 
+    <section class ="fondo-formularios">
+    <section class = "form-register">
+        <h4>Formulario registro</h4>
+        <input class = "controls" type = "text" name="nombre_usuario" id="nombre_usuario" placeholder="Ingrese su nombre">
+        <span class="text-danger"></span>
+        <input class = "controls" type = "text" name="apellidos_usuario" id="apellidos_usuario" placeholder="Ingrese su apellido">
+        <input class = "controls" type = "text" name="email_usuario" id="email_usuario" placeholder="Ingrese su correo">
+        <input class = "controls" type = "text" name="password_usuario" id="password_usuario" placeholder="Ingrese su contraseña">
+        <input class = "controls" type = "text" name="password_usuario" id="password_usuario" placeholder="Confirmar contraseña">
+        <div>
+            <label for="imagen_usuario">Subí una foto:</label>
+            <input type="file" name="imagen_usuario" accept=".jpg" id="imagen_usuario">
+        </div>
+        <p>Recordar campo de datos</p>
+        <input class = "botons" type = "submit" value="Registrar">
+        <p><a href = "#">¿Ya tengo cuenta?</a></p>
+
+
+
+    </section>
+    </section>
+</form>
+
+    <%- include('./partialViews/footer.ejs') %>
+    <script src="/js/createUserValidation.js"></script> 
+</body>
+</html>

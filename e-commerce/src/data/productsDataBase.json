@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "nombre_producto": "Ojota OJ3022",
+    "precio_producto": "50000",
+    "categoria_producto": "ojotas",
+    "descripcion_producto": "Vieja descripcion",
+    "color_producto": "blanco",
+    "imagen_producto": "imgProd",
+    "mostrar": true
+  },
+  {
+    "id": 2,
+    "nombre_producto": "Sombrero AAAA",
+    "precio_producto": "9871",
+    "categoria_producto": "sombreros",
+    "descripcion_producto": "Aqui, Descripcion del prsadfdsaf",
+    "color_producto": "mostaza",
+    "imagen_producto": "imagen_producto-1650591974469-729567776.jpg",
+    "mostrar": true
+  },
+  {
+    "id": 3,
+    "nombre_producto": "Traje TR3022",
+    "precio_producto": "111",
+    "categoria_producto": "trajes",
+    "descripcion_producto": "Aqui, Descripcion del producto ",
+    "color_producto": "mostaza",
+    "imagen_producto": "main-trajedebano2.jpeg",
+    "mostrar": false
+  },
+  {
+    "id": 4,
+    "nombre_producto": "Anteojos AN3022",
+    "precio_producto": "9871",
+    "categoria_producto": "anteojos",
+    "descripcion_producto": "Aqui, Descripcion del producto",
+    "color_producto": "violeta",
+    "imagen_producto": "default-image.png",
+    "mostrar": true
+  },
+  {
+    "id": 5,
+    "nombre_producto": "Anteojos AN3032",
+    "precio_producto": 9871,
+    "categoria_producto": "anteojos",
+    "descripcion_producto": "Aqui, Descripcion del producto ",
+    "color_producto": "blanco",
+    "imagen_producto": "main-anteojos2.jpeg",
+    "mostrar": true
+  },
+  {
+    "id": 6,
+    "nombre_producto": "Traje TR111",
+    "precio_producto": 9871,
+    "categoria_producto": "trajes",
+    "descripcion_producto": "Aqui, Descripcion del producto ",
+    "color_producto": "mostaza",
+    "imagen_producto": "main-trajedebano2.jpeg",
+    "mostrar": true
+  },
+  {
+    "id": 7,
+    "nombre_producto": "Ojota 111",
+    "descripcion_producto": "nuevo producto",
+    "precio_producto": "50",
+    "color_producto": "negro",
+    "categoria_producto": "ojotas",
+    "imagen_producto": "main-ojotas2.jpeg",
+    "mostrar": false
+  },
+  {
+    "id": 8,
+    "nombre_producto": "Ojota 222",
+    "descripcion_producto": "ojota 222 descripcion",
+    "precio_producto": "1111",
+    "color_producto": "violeta",
+    "categoria_producto": "sombreros",
+    "imagen_producto": "default-image.png",
+    "mostrar": true
+  },
+  {
+    "id": 9,
+    "nombre_producto": "Ojota 111",
+    "descripcion_producto": "dsfsadfsd",
+    "precio_producto": "120",
+    "color_producto": "mostaza",
+    "categoria_producto": "ojotas",
+    "imagen_producto": "main-ojotas2.jpeg",
+    "mostrar": false
+  },
+  {
+    "id": 10,
+    "nombre_producto": "Ojota 333",
+    "descripcion_producto": "descripcion ojota 333",
+    "precio_producto": "333",
+    "color_producto": "negro",
+    "categoria_producto": "ojotas",
+    "imagen_producto": "main-ojotas2.jpeg",
+    "mostrar": false
+  },
+  {
+    "id": 11,
+    "nombre_producto": "Traje 2222",
+    "descripcion_producto": "descripcion del traje 222",
+    "precio_producto": "222",
+    "color_producto": "violeta",
+    "categoria_producto": "trajes",
+    "imagen_producto": "default-image.png",
+    "mostrar": true
+  },
+  {
+    "id": 12,
+    "nombre_producto": "traje 333",
+    "descripcion_producto": "descripcion",
+    "precio_producto": "5549",
+    "color_producto": "mostaza",
+    "categoria_producto": "trajes",
+    "imagen_producto": "default-image.png",
+    "mostrar": true
+  },
+  {
+    "id": 13,
+    "nombre_producto": "Ojota 111",
+    "descripcion_producto": "nueva descripcion",
+    "precio_producto": "4543",
+    "color_producto": "mostaza",
+    "categoria_producto": "ojotas",
+    "imagen_producto": "default-image.png",
+    "mostrar": true
+  },
+  {
+    "id": 14,
+    "nombre_producto": "bici",
+    "descripcion_producto": "bici",
+    "precio_producto": "6666",
+    "color_producto": "blanco",
+    "categoria_producto": "sombreros",
+    "imagen_producto": "imagen_producto-1650588549076-434443760.jpg",
+    "mostrar": false
+  },
+  {
+    "id": 15,
+    "nombre_producto": "PRUEBAAAAAa",
+    "descripcion_producto": "aaa",
+    "precio_producto": "aasdc",
+    "color_producto": "mostaza",
+    "categoria_producto": "anteojos",
+    "imagen_producto": "imagen_producto-1650592611107-243047921.jpg",
+    "mostrar": true
+  },
+  {
+    "id": 16,
+    "nombre_producto": "nuevo",
+    "descripcion_producto": "sadfds",
+    "precio_producto": "122",
+    "color_producto": "3",
+    "categoria_producto": "5",
+    "imagen_producto": "imagen_producto-1655602802835-35163739.jpg",
+    "mostrar": true
+  }
+]

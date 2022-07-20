@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('./partialViews/head.ejs') %>
+
+<body>
+    
+    <%- include('./partialViews/header.ejs') %>
+
+    <main class="main-home">
+
+        <% if(typeof userData !='undefined' ){%>
+
+        <h1 class="texto-centrado">Lista de usuarios</h1>
+
+            <section class="productsList">
+                <% userList.forEach(user=> { %>
+                    <article class="productList-item">
+                        <a href="/usuarios/<%= user.id%>"><img src="/images/Users/<%= user.imagen_usuario%>" alt="<%= user.nombre_usuario%>"></a>
+                        <p class="productList-item-nombre"><%= user.nombre_usuario%></p>
+                        <p class="productList-item-precio"><%= user.categoria_usuario%></p>
+                        <a href="/usuarios/<%= user.id%>" class="productList-item-link-comprar">Ver</a>
+                        
+                    </article>
+                <% })%>
+            </section>
+        
+            <%}else {%>
+
+                <h1>NO ESTÁS LOGUEADO</h1>
+                <a href="/usuarios/login">Inicia sesión aquí</a>
+        
+            <%}%>
+
+    </main>
+
+    <%- include('./partialViews/footer.ejs') %>
+
+</body>
+</html>
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partialViews/head.ejs') %>
+<body>
+    <%- include('./partialViews/header.ejs') %>
+
+    <main class="main-productDetail">
+        
+        <section class="contenedor-productDetail"> 
+            <div class="productDetail-img">
+                <img src="/images/Productos/<%= product.imagen_producto %>" alt="" class="productDetail-imgPrincipal">
+                <!-- <div class="productDetail-carrusel">
+                    <img src="/images/Productos/<%= product.imagen_producto %>" alt="">
+                    <img src="/images/Productos/<%= product.imagen_producto %>" alt="">
+                    <img src="/images/Productos/<%= product.imagen_producto %>" alt="">
+                    <img src="/images/Productos/<%= product.imagen_producto %>" alt="">
+                </div> -->
+            </div>
+    
+            <div class="productDetail-content">
+                <h2><%= product.nombre_producto %></h2>
+                <h3 class="productDetail-precio">$<%= product.precio_producto %></h3>
+                <form action="/productos/carrito" method="GET" class="productDetail-form">
+                 <label> Talla 
+                     <select name="productDetail-talla" id="">
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                     </select>
+                 </label>
+                 <label> Color
+                    <select name="productDetail-talla" id="">
+                        <% listaColores.forEach(color => { %>
+                            <option value="<%= color.id_color %>"><%= color.nombre %></option>
+                        <% }); %>
+                    </select>
+                </label>
+                 <label>Cantidad <input type="number" name="productDetail-cantidad" value="1"> </label>
+                 <input type="submit" name="productDetail-btn-agregar-carrito" value="Agregar al Carrito">                
+                </form>
+                
+                <div class="productDetail-caracteristicas">
+                   <strong>Caracteristicas</strong>
+                   <p>
+                      <%= product.descripcion_producto %> <br>
+                   
+                   </p> 
+                </div>
+
+                <% if(typeof userData !='undefined' ){%>
+
+                <a href="/productos/edit/<%= product.id%>" class="action-button edit">EDITAR PRODUCTO</a>
+                <form action="/productos/<%= product.id%>?_method=delete" method="POST" style="display: inline-flex">
+                    <button type="submit" class="action-button delete">ELIMINAR</button>
+                </form>
+
+                <%}else {%>
+            
+                <%}%>
+
+            </div>
+        </section>
+
+        
+        
+    </main>
+   
+    <%- include('./partialViews/footer.ejs') %>
+    
+</body>
+</html>
